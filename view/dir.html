@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <body>
+    <ul class="p-10">
+      <% files.forEach((file) => { %>
+        <li>
+          <a href="<%= file %>">
+            <%= file.slice(1) %>
+          </a>
+        </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
