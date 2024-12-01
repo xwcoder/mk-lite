@@ -1,7 +1,8 @@
 {
   "name": "mk-lite",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A markdown file preview server",
+  "type": "module",
   "bin": {
     "mk-lite": "bin/mk.mjs"
   },
