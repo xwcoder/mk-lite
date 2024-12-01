@@ -27,7 +27,7 @@ export function start(options) {
     cache: false,
   })
 
-  app.use(serveStatic('./public'))
+  app.use(serveStatic(path.join(import.meta.dirname, './public')))
 
   router.get(/\.md$/i, async (ctx) => {
     const filepath = path.join(root, decodeURIComponent(ctx.path))
